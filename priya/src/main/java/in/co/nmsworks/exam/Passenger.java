@@ -148,14 +148,26 @@ public class Passenger {
     }
     public void getClassWiseSurvivalRate(){
         parseFile();
-        Map<Integer,Passenger> classToPassenger = new HashMap<>();
+        Map<Integer,Integer> classToPassenger = new HashMap<>(Collections.emptyMap());
         for (Passenger passenger : passengers) {
-                          classToPassenger.put(passenger.getpClass(),passenger.)
+              if(classToPassenger.containsKey(passenger.getpClass())) {
+                  classToPassenger.put(passenger.getpClass(),classToPassenger.get(passenger.getpClass())+1);
+              }
+              else{
+                  classToPassenger.put(passenger.getpClass(),1);
+              }
         }
+        for (Passenger passenger : passengers) {
+
+        for (Integer i : classToPassenger.keySet()) {
+            System.out.println(i+" "+(classToPassenger.get(i)/10));
+        }
+    }
     }
 
     public static void main(String[] args) {
         Passenger p = new Passenger();
         p.getNameToAge(27.0f);
+        p.getClassWiseSurvivalRate();
     }
 }

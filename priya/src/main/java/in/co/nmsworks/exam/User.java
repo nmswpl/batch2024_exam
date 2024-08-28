@@ -165,8 +165,8 @@ public class User {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         User u = new User();
-        u.validateUser("davidj" ,"e6a33eee180b07e563d74fee8c2c66b8");
-        u.getUserDetailsList();
+        /*u.validateUser("davidj" ,"e6a33eee180b07e563d74fee8c2c66b8");
+        u.getUserDetailsList();*/
         u.getActiveFemaleName(u.getUserDetailsList());
     }
 }
