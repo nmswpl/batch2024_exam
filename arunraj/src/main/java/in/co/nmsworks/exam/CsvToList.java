@@ -10,7 +10,6 @@ public class CsvToList {
     public static void main(String[] args) {
         CsvToList csvt = new CsvToList();
         csvt.checkAge(csvt.convertCsvToList(),23);
-
     }
 
     public List<Passenger> convertCsvToList(){
@@ -54,8 +53,9 @@ Total number of people in class X) *100].
 
     private void classWiseSurvivedCount(int pClass){
         for (Passenger passenger : convertCsvToList()){
-            int count = 0;
+            if(passenger.getPcClass() == pClass ){
 
+            }
         }
     }
 }
