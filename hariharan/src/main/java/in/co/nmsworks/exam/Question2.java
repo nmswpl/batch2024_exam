@@ -4,20 +4,23 @@ import java.util.Scanner;
 
 public class Question2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Number :");
-        int number = sc.nextInt();
-        int k =1;
-        for (int i =0; i< number/2;i++){
-            int j =0;
-          while( j < k){
-              System.out.print("*");
-              j++;
-          }
+        int i, j;
 
-            k++;
-            System.out.println("\n");
+     Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the height: ");
+     int height = sc.nextInt();
+        for (i = 0; i < height; i++)
+        {
+            for (j = 0; j < i + 1; j++)
+                System.out.print("*");
+            System.out.print("\n");
+        }
 
+        for (i = 1; i < height; i++)
+        {
+            for (j = i; j < height; j++)
+                System.out.print("*");
+            System.out.print("\n");
         }
 
     }
