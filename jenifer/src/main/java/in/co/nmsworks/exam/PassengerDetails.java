@@ -36,6 +36,10 @@ public class PassengerDetails {
                     thirdClassCount++;
                 }
             }
+
+            System.out.println("Total number of passenger in class 1 : " + totalNumberOfPassengerInClass1);
+            System.out.println("Total number of passenger in class 2 : " + totalNumberOfPassengerInClass2);
+            System.out.println("Total number of passenger in class 3 : " + totalNumberOfPassengerInClass3);
             System.out.println("First class count : " + firstClassCount + " Survival Percentage : " + (double)((firstClassCount/totalNumberOfPassengerInClass1)*100));
             System.out.println("Second class count : " + secondClassCount + " Survival Percentage : " + (double)((secondClassCount/totalNumberOfPassengerInClass2)*100));
             System.out.println("Third class count : " +thirdClassCount + " Survival Percentage : " + (double)((thirdClassCount/totalNumberOfPassengerInClass3)*100));
@@ -74,7 +78,7 @@ public class PassengerDetails {
 
     public static void main(String[] args) {
         PassengerDetails passengerDetails = new PassengerDetails();
-        //passengerDetails.printPassenger();
+        passengerDetails.printPassenger();
         passengerDetails.classWiseSurvivedCount();
     }
 }

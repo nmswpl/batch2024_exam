@@ -74,9 +74,8 @@ public class CheckDetailsFromDatabase {
 
 public static void main(String[] args) {
     CheckDetailsFromDatabase checkDetailsFromDatabase = new CheckDetailsFromDatabase();
-    //checkDetailsFromDatabase.checkUserDetails();
-    //checkDetailsFromDatabase.getUserDetails();
-    //System.out.println(checkDetailsFromDatabase.getActiveFemaleList());
+    checkDetailsFromDatabase.checkUserDetails();
+    checkDetailsFromDatabase.getUserDetails();
     System.out.println(checkDetailsFromDatabase.getActiveFemaleList());
 }
 }
