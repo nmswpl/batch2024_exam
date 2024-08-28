@@ -157,12 +157,12 @@ public class Passenger {
                   classToPassenger.put(passenger.getpClass(),1);
               }
         }
-        for (Passenger passenger : passengers) {
+
 
         for (Integer i : classToPassenger.keySet()) {
             System.out.println(i+" "+(classToPassenger.get(i)/10));
         }
-    }
+
     }
 
     public static void main(String[] args) {
