@@ -63,6 +63,8 @@ public class Question4a {
             System.out.println("Survival Percentage Class 1 ::"+percentage);
             System.out.println("Survival Percentage Class 2 ::"+percentage1);
             System.out.println("Survival Percentage Class 3 ::"+percentage2);
+            br.close();
+            fr.close();
 
 
 
