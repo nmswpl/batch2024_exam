@@ -1,5 +1,9 @@
 package in.co.nmsworks.exam;
 
+/**
+ * find the temperature at which both the Celsius and Fahrenheit scales show the same reading.
+ */
+
 public class Question1 {
     public static void main(String[] args) {
         Question1 temperatureConverter = new Question1();

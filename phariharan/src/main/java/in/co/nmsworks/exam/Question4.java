@@ -3,6 +3,12 @@ package in.co.nmsworks.exam;
 import java.io.*;
 import java.util.*;
 
+/**
+ * Print Class wise survived people Count and Survival percentage [(No of people survived in class X /
+ * Total number of people in class X) *100].
+ * b. Get Input as Age from Console. Print the passenger ID and name where the passenger's age is less
+ * than or equal to the given age
+ */
 public class Question4 {
     static FileReader fileReader;
     static BufferedReader bufferedReader;
