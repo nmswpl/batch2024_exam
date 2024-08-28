@@ -68,7 +68,6 @@ public class Question4 {
                 }
             }
         }
-
         float averageOfClass1 = (float) noOfPassengerSurvivedInClass1 / totalNumberOfPassengerInClass1;
         float averageOfClass2 = (float) noOfPassengerSurvivedInClass2 / totalNumberOfPassengerInClass2;
         float averageOfClass3 = (float) noOfPassengerSurvivedInClass3 / totalNumberOfPassengerInClass3;
