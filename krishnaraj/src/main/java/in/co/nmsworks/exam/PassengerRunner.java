@@ -30,7 +30,25 @@ public class PassengerRunner {
      * Print Class wise survived people Count and Survival percentage [(No of people survived in class X /
      * Total number of people in class X) *100].
      */
+    public void classWiseSurviedPeople(List<Passenger> passengerList){
+        int passengerCount1 = 0;
+        int passengerCount2 = 0;
+        int passengerCount3 = 0;
+        for (Passenger passenger : passengerList) {
+            int passengerClass= passenger.getPclass();
+            int passengerSurvied = passenger.getSurvied();
+            if(passengerClass ==1){
+                passengerCount1 += 1;
+            }
+            if(passengerClass ==2){
+                passengerCount1 += 1;
+            }
+            if(passengerClass ==3){
+                passengerCount1 += 1;
+            }
+        }
 
+    }
 
     public static void main(String[] args) {
         PassengerRunner passengerRunner = new PassengerRunner();
