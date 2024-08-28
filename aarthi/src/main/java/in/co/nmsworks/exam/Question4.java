@@ -34,7 +34,7 @@ public class Question4 {
             System.out.println("Enter the Age::");
             ageOfAPassenger = scanner.nextInt();
             if(line != null){
-                 survived = Integer.parseInt(arr[0]);
+                 survived = Integer.valueOf(arr[0]);
                  pClass = Integer.parseInt(arr[1]);
                  name = arr[2];
                  sex = arr[3];
@@ -43,7 +43,7 @@ public class Question4 {
                  parentsOrChildrenAborad = Integer.parseInt(arr[6]);
                  fare = Float.parseFloat(arr[7]);
             }
-            if(ageOfAPassenger <= age){
+            if(age <= ageOfAPassenger){
                 System.out.println("The Passenger Name::"+name+age);
             }
 
@@ -52,5 +52,10 @@ public class Question4 {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static void main(String[] args) {
+        Question4 passengerDetail = new Question4();
+        passengerDetail.passengerAgeAboveThreshold();
     }
 }
