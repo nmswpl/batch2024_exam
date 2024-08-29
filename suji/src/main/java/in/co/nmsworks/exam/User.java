@@ -3,15 +3,18 @@ package in.co.nmsworks.exam;
 import java.util.ArrayList;
 import java.util.List;
 
- public class User {
+ public class User
+ {
 
-    int userid;
-    String name;
-    String password;
-    String firstName;
-    String lastName;
-    String gender;
-    int status;
+    private int userid;
+    private   String name;
+    private String password;
+    private String firstName;
+    private   String lastName;
+    private   String gender;
+    private int status;
+    List<User> listOfUsers;
+
 
     public int getUserid() {
         return userid;
@@ -53,14 +56,17 @@ import java.util.List;
         this.lastName = lastName;
     }
 
-    public User(int userid, String name, String password, String firstName, String lastName, String gender, int status) {
-        this.userid = userid;
-        this.name = name;
-        this.password = password;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.gender = gender;
-        this.status = status;
+     public User() {
+     }
+
+     public User(int userid, String name, String firstName, String lastName, String gender,String password, int status) {
+        setUserid(userid);
+        setName(name);
+        setFirstName(firstName);
+        setLastName(lastName);
+        setGender(gender);
+         setPassword(password);
+        setStatus(status);
     }
 
     public String getGender() {
