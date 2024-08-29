@@ -77,7 +77,7 @@ public class UserDetails
         {
             if((user.getStatus()==1)&& user.getGender().equals("Female"))
             {
-                activeFemaleSet.add(user.getName());
+                activeFemaleSet.add(user.getFirstName()+"_"+user.getLastName());
             }
 
         }

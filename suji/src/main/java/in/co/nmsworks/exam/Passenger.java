@@ -6,7 +6,7 @@ public class Passenger
    int pclass;
    String Name;
    String gender;
-   int age;
+   float age;
    String siblingOrSpouse;
    String parentOrChildren;
    float fare;
@@ -43,11 +43,11 @@ public class Passenger
         this.gender = gender;
     }
 
-    public int getAge() {
+    public float getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(float age) {
         this.age = age;
     }
 
@@ -63,10 +63,10 @@ public class Passenger
         return parentOrChildren;
     }
 
-    public Passenger(boolean survived, int pclass, String name, String gender, int age, String siblingOrSpouse, String parentOrChildren, float fare) {
+    public Passenger(boolean survived, int pclass, String name, String gender, float age, String siblingOrSpouse, String parentOrChildren, float fare) {
         this.survived = survived;
         this.pclass = pclass;
-        Name = name;
+        this.Name = name;
         this.gender = gender;
         this.age = age;
         this.siblingOrSpouse = siblingOrSpouse;
