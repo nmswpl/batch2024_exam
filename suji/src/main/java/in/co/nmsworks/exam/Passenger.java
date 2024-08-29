@@ -2,7 +2,7 @@ package in.co.nmsworks.exam;
 
 public class Passenger
 {
-   boolean survived;
+   int survived;
    int pclass;
    String Name;
    String gender;
@@ -11,11 +11,12 @@ public class Passenger
    String parentOrChildren;
    float fare;
 
-    public boolean isSurvived() {
+    public int isSurvived()
+    {
         return survived;
     }
 
-    public void setSurvived(boolean survived) {
+    public void setSurvived(int survived) {
         this.survived = survived;
     }
 
@@ -63,7 +64,7 @@ public class Passenger
         return parentOrChildren;
     }
 
-    public Passenger(boolean survived, int pclass, String name, String gender, float age, String siblingOrSpouse, String parentOrChildren, float fare) {
+    public Passenger(int survived, int pclass, String name, String gender, float age, String siblingOrSpouse, String parentOrChildren, float fare) {
         this.survived = survived;
         this.pclass = pclass;
         this.Name = name;
