@@ -11,9 +11,12 @@ public class Question3 {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter a Number :: ");
             int num = scanner.nextInt();
-            while (rng.getRandomNumber() == num ){
+            while (true){
+
                 count++;
-                break;
+                if(rng.getRandomNumber()==num) {
+                    break;
+                }
 
             }
             System.out.println("num come in ::"+count);
