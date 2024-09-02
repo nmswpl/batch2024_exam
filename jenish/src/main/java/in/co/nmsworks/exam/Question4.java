@@ -68,16 +68,22 @@ public class Question4 {
                 }
             }
         }
+        //System.out.println("1"+noOfPassengerSurvivedInClass1);
+        //System.out.println("2"+noOfPassengerSurvivedInClass2);
+        //System.out.println("3"+noOfPassengerSurvivedInClass3);
+        //System.out.println("1"+totalNumberOfPassengerInClass1);
+        //System.out.println("2"+totalNumberOfPassengerInClass2);
+        //System.out.println("3"+totalNumberOfPassengerInClass3);
         float averageOfClass1 = (float) noOfPassengerSurvivedInClass1 / totalNumberOfPassengerInClass1;
         float averageOfClass2 = (float) noOfPassengerSurvivedInClass2 / totalNumberOfPassengerInClass2;
         float averageOfClass3 = (float) noOfPassengerSurvivedInClass3 / totalNumberOfPassengerInClass3;
 
         System.out.println("Total Number of Passenger Survived in Class 1 : "+noOfPassengerSurvivedInClass1);
-        System.out.println("Average of Passenger Survived in Class 1 : "+averageOfClass1);
+        System.out.println("Average of Passenger Survived in Class 1 : "+averageOfClass1 * 100);
         System.out.println("Total Number of Passenger Survived in Class 2 : "+noOfPassengerSurvivedInClass2);
-        System.out.println("Average of Passenger Survived in Class 2 : "+averageOfClass2);
+        System.out.println("Average of Passenger Survived in Class 2 : "+averageOfClass2 * 100);
         System.out.println("Total Number of Passenger Survived in Class 3 : "+noOfPassengerSurvivedInClass3);
-        System.out.println("Average of Passenger Survived in Class 3 : "+averageOfClass3);
+        System.out.println("Average of Passenger Survived in Class 3 : "+averageOfClass3 * 100);
     }
 
     public void printNameAndAge(float age){
