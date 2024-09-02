@@ -37,6 +37,7 @@ public class Question3 {
         int choice = 0;
 
         do {
+            System.out.println("---------------------------");
             System.out.println("1. Validate User\n" +
                     "2. Get female users\n" +
                     "3. Exit");
@@ -109,7 +110,7 @@ public class Question3 {
 
         for (UserDetails userDetails : usersList) {
 
-            if(userDetails.getGender().equalsIgnoreCase("FEMALE"))
+            if(userDetails.getGender().equalsIgnoreCase("FEMALE") && userDetails.getStatus() == 1)
             {
                 femaleNames.add(userDetails.getFirstName() + " " +userDetails.getLastName());
             }
